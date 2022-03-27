@@ -1,17 +1,16 @@
+import type { LinksFunction, MetaFunction } from "remix";
 import {
   Links,
-  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "remix";
-import type { MetaFunction } from "remix";
 
 import globalStylesUrl from "./styles/global.css";
-import globalMediumStylesUrl from "./styles/global-medium.css";
 import globalLargeStylesUrl from "./styles/global-large.css";
+import globalMediumStylesUrl from "./styles/global-medium.css";
 
 export const links: LinksFunction = () => {
   return [
