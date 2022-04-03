@@ -1,11 +1,12 @@
 /**
- * @type {import('@remix-run/dev/config').AppConfig}
+ * @type {import('@remix-run/dev').AppConfig}
  */
 module.exports = {
-  appDirectory: "app",
-  assetsBuildDirectory: "public/build",
-  devServerPort: 8002,
+  serverBuildTarget: "arc",
+  server: "./server.js",
   ignoredRouteFiles: [".*"],
-  publicPath: "/build/",
-  serverBuildDirectory: "build",
+  // appDirectory: "app",
+  // assetsBuildDirectory: "public/build",
+  // serverBuildPath: "server/index.js",
+  // publicPath: "/_static/build/",
 };
