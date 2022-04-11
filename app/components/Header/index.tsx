@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({
   user,
 }) => {
   return (
-    <header className="nav row spaceBetween alignCenter">
+    <header className="nav row spaceBetween alignCenter wrap">
       <NavLink to="/">
         <img
           className="logo"

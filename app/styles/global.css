@@ -32,7 +32,8 @@
   --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
   --font-display: baloo, var(--font-body);
-  --height-footer: 200px;
+  --height-footer-desktop: 200px;
+  --height-footer-mobile: 180px;
 }
 
 html {

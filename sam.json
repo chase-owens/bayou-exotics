@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Exported by architect/package@8.1.0 on 2022-04-03T23:55:17.675Z",
+  "Description": "Exported by architect/package@8.1.0 on 2022-04-10T19:42:59.610Z",
   "Resources": {
     "Role": {
       "Type": "AWS::IAM::Role",
@@ -232,7 +232,7 @@
         "Environment": {
           "Variables": {
             "ARC_APP_NAME": "remix-architect-app",
-            "ARC_ENV": "staging",
+            "ARC_ENV": "production",
             "ARC_ROLE": {
               "Ref": "Role"
             },
@@ -243,7 +243,10 @@
             "ARC_STATIC_BUCKET": {
               "Ref": "StaticBucket"
             },
-            "ARC_STATIC_SPA": false
+            "ARC_STATIC_SPA": false,
+            "ACCESS_KEY_ID": "AKIASM4ZSN5B3DH7JRVR",
+            "SECRET_ACCESS_KEY": "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",
+            "SESSION_SECRET": "GoldiamondLayng"
           }
         },
         "Role": {

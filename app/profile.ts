@@ -4,7 +4,6 @@ import s3 from "../aws/aws-exports";
 
 export interface Profile {
   datesClosed: string[][];
-  hourClose: number;
   hourOpen: number;
   instagramUrl: string;
   name: string;
