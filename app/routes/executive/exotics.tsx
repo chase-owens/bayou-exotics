@@ -1,11 +1,12 @@
 import { ActionFunction, LinksFunction, LoaderFunction } from "remix";
-import { Form, Link, useLoaderData, useTransition } from "remix";
+import { Form, Link, useLoaderData } from "remix";
 
 import {
   Carts,
   deleteCurrentCart,
   deleteCurrentEdible,
   deleteCurrentFlower,
+  deleteCurrentMoonRock,
   deleteCurrentPreRoll,
   deleteCurrentWax,
   Edibles,
@@ -13,8 +14,10 @@ import {
   getCarts,
   getEdibles,
   getFlowers,
+  getMoonRocks,
   getPreRolls,
   getWaxes,
+  MoonRocks,
   PreRolls,
   Waxes,
 } from "~/exotics";
@@ -25,6 +28,7 @@ interface LoaderData {
   carts: Carts;
   edibles: Edibles;
   flowers: Flowers;
+  moonRocks: MoonRocks;
   preRolls: PreRolls;
   waxes: Waxes;
 }
@@ -35,6 +39,7 @@ export const action: ActionFunction = async ({ request }) => {
   const cartSelected = formData.get("cart");
   const edibleSelected = formData.get("edible");
   const flowerSelected = formData.get("flower");
+  const moonRockSelected = formData.get("moonRocks");
   const preRollSelected = formData.get("preRoll");
   const waxSelected = formData.get("wax");
 
@@ -50,6 +55,10 @@ export const action: ActionFunction = async ({ request }) => {
     return await deleteCurrentFlower(+flowerSelected);
   }
 
+  if (moonRockSelected) {
+    return await deleteCurrentMoonRock(+moonRockSelected);
+  }
+
   if (preRollSelected) {
     return await deleteCurrentPreRoll(+preRollSelected);
   }
@@ -62,15 +71,17 @@ export const action: ActionFunction = async ({ request }) => {
 };
 
 export const loader: LoaderFunction = async () => {
-  const [carts, edibles, flowers, preRolls, waxes] = await Promise.all([
-    getCarts(),
-    getEdibles(),
-    getFlowers(),
-    getPreRolls(),
-    getWaxes(),
-  ]);
+  const [carts, edibles, flowers, moonRocks, preRolls, waxes] =
+    await Promise.all([
+      getCarts(),
+      getEdibles(),
+      getFlowers(),
+      getMoonRocks(),
+      getPreRolls(),
+      getWaxes(),
+    ]);
 
-  return { carts, edibles, flowers, preRolls, waxes };
+  return { carts, edibles, flowers, moonRocks, preRolls, waxes };
 };
 
 export const links: LinksFunction = () => {
@@ -78,9 +89,8 @@ export const links: LinksFunction = () => {
 };
 
 export default function Executive() {
-  const { carts, edibles, flowers, preRolls, waxes } =
+  const { carts, edibles, flowers, moonRocks, preRolls, waxes } =
     useLoaderData<LoaderData>();
-  const transition = useTransition();
 
   return (
     <div className="row space wrap ">
@@ -167,6 +177,29 @@ export default function Executive() {
                 <input type="hidden" name="wax" value={index} />
                 <div className="row spaceBetween alignCenter space">
                   <span>{wax.name}</span>
+                  <button className="button" type="submit">
+                    Delete
+                  </button>
+                </div>
+              </Form>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="content" data-light="">
+        <span className="row alignCenter spaceBetween">
+          <h2>Moon Rock</h2>
+          <Link className="button" to="/executive/new/moon-rock">
+            Add
+          </Link>
+        </span>
+        <ul className="col space">
+          {moonRocks.current.map((moonRock, index) => (
+            <li key={`${moonRock.name}-${index}`}>
+              <Form name="moonRock" method="post">
+                <input type="hidden" name="moonRock" value={index} />
+                <div className="row spaceBetween alignCenter space">
+                  <span>{moonRock.name}</span>
                   <button className="button" type="submit">
                     Delete
                   </button>

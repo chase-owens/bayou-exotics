@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Exported by architect/package@8.1.0 on 2022-04-10T19:42:59.610Z",
+  "Description": "Exported by architect/package@8.1.0 on 2022-04-11T17:31:15.507Z",
   "Resources": {
     "Role": {
       "Type": "AWS::IAM::Role",
@@ -231,7 +231,7 @@
         "Timeout": 5,
         "Environment": {
           "Variables": {
-            "ARC_APP_NAME": "remix-architect-app",
+            "ARC_APP_NAME": "bayou-exotics",
             "ARC_ENV": "production",
             "ARC_ROLE": {
               "Ref": "Role"
@@ -244,8 +244,8 @@
               "Ref": "StaticBucket"
             },
             "ARC_STATIC_SPA": false,
-            "ACCESS_KEY_ID": "AKIASM4ZSN5B3DH7JRVR",
-            "SECRET_ACCESS_KEY": "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",
+            "ACCESS_KEY_ID": "AKIASM4ZSN5BSPY6D2YV",
+            "SECRET_ACCESS_KEY": "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",
             "SESSION_SECRET": "GoldiamondLayng"
           }
         },

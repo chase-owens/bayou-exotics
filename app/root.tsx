@@ -21,7 +21,7 @@ export const links: LinksFunction = () => {
 };
 
 export const meta: MetaFunction = () => {
-  return { title: "Bayou Exotics" };
+  return { description: "Best Prices on Best Quality", title: "Bayou Exotics" };
 };
 
 export default function App() {

@@ -10,8 +10,10 @@ import {
   getCarts,
   getEdibles,
   getFlowers,
+  getMoonRocks,
   getPreRolls,
   getWaxes,
+  MoonRocks,
   PreRolls,
   Waxes,
 } from "~/exotics";
@@ -25,6 +27,7 @@ type LoaderData = {
   carts: Carts;
   edibles: Edibles;
   flowers: Flowers;
+  moonRocks: MoonRocks;
   preRolls: PreRolls;
   profile: Profile;
   user: User | null;
@@ -32,18 +35,19 @@ type LoaderData = {
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
-  const [carts, edibles, flowers, preRolls, profile, user, waxes] =
+  const [carts, edibles, flowers, moonRocks, preRolls, profile, user, waxes] =
     await Promise.all([
       getCarts(),
       getEdibles(),
       getFlowers(),
+      getMoonRocks(),
       getPreRolls(),
       getProfile(),
       getUserBySession(request),
       getWaxes(),
     ]);
 
-  return { carts, edibles, flowers, preRolls, profile, user, waxes };
+  return { carts, edibles, flowers, moonRocks, preRolls, profile, user, waxes };
 };
 
 export const links: LinksFunction = () => {
@@ -51,7 +55,7 @@ export const links: LinksFunction = () => {
 };
 
 export default function Exotics() {
-  const { carts, edibles, flowers, preRolls, profile, user, waxes } =
+  const { carts, edibles, flowers, moonRocks, preRolls, profile, user, waxes } =
     useLoaderData<LoaderData>();
 
   return (
@@ -91,6 +95,16 @@ export default function Exotics() {
               key={`wax-${wax.name}-${index}`}
               quantityAbbreviation="(g)"
               {...wax}
+            />
+          ))}
+        </ul>
+        <h2>Moon Rocks</h2>
+        <ul className="cards">
+          {moonRocks.current.map((moonRock, index) => (
+            <ProductCard
+              key={`moonrock-${moonRock.name}-${index}`}
+              quantityAbbreviation="(g)"
+              {...moonRock}
             />
           ))}
         </ul>

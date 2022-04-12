@@ -20,6 +20,18 @@ export enum Wrap {
 
 export type Price = Record<string, number>;
 
+export interface Cart extends Flower {
+  amount?: string;
+  disposable: boolean;
+  flavors: string[];
+}
+
+export interface Edible extends Omit<Flower, "type"> {
+  amount: string;
+  flavors: string[];
+  type: string;
+}
+
 export type Flower = {
   class: "thc";
   description?: string;
@@ -33,16 +45,8 @@ export type Flower = {
   type: FlowerType;
 };
 
-export interface Cart extends Flower {
-  amount?: string;
-  disposable: boolean;
+export interface MoonRock extends Flower {
   flavors: string[];
-}
-
-export interface Edible extends Omit<Flower, "type"> {
-  amount: string;
-  flavors: string[];
-  type: string;
 }
 
 export interface PreRoll extends Flower {
@@ -54,10 +58,6 @@ export interface Wax extends Omit<Flower, "type"> {
   type: WaxType;
 }
 
-export type Flowers = {
-  current: Flower[];
-  upcoming: Flower[];
-};
 export type Carts = {
   current: Cart[];
   upcoming: Cart[];
@@ -66,6 +66,16 @@ export type Carts = {
 export type Edibles = {
   current: Edible[];
   upcoming: Edible[];
+};
+
+export type Flowers = {
+  current: Flower[];
+  upcoming: Flower[];
+};
+
+export type MoonRocks = {
+  current: MoonRock[];
+  upcoming: MoonRock[];
 };
 
 export type PreRolls = {
@@ -129,6 +139,22 @@ export const createFlower = async (flower: Flower) => {
     .promise();
 };
 
+export const createMoonRock = async (moonRock: MoonRock) => {
+  const moonRocks = await getFile(Keys.MoonRock);
+
+  moonRocks.current.push(moonRock);
+
+  const minifiedMoonRocks = JSON.stringify(moonRocks);
+
+  return await s3
+    .putObject({
+      Bucket: "bayou-exotics",
+      Key: Keys.MoonRock,
+      Body: minifiedMoonRocks,
+    })
+    .promise();
+};
+
 export const createPreRoll = async (preRoll: PreRoll) => {
   const preRolls = await getPreRolls();
 
@@ -170,6 +196,8 @@ export const getEdibles = () => getFile(Keys.Edible);
 
 export const getFlowers = () => getFile(Keys.Flower);
 
+export const getMoonRocks = () => getFile(Keys.MoonRock);
+
 export const getPreRolls = () => getFile(Keys.PreRoll);
 
 export const getWaxes = () => getFile(Keys.Wax);
@@ -183,6 +211,9 @@ export const deleteCurrentEdible = (index: number) =>
 
 export const deleteCurrentFlower = (index: number) =>
   deleteCurrentIndex(Keys.Flower, index);
+
+export const deleteCurrentMoonRock = (index: number) =>
+  deleteCurrentIndex(Keys.MoonRock, index);
 
 export const deleteCurrentPreRoll = (index: number) =>
   deleteCurrentIndex(Keys.PreRoll, index);

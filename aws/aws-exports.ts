@@ -13,6 +13,7 @@ export const enum Keys {
   Cart = "exotics/thc/cart.json",
   Edible = "exotics/thc/edible.json",
   Flower = "exotics/thc/flower.json",
+  MoonRock = "exotics/thc/moon-rock.json",
   PreRoll = "exotics/thc/pre-roll.json",
   User = "users.json",
   Wax = "exotics/thc/wax.json",
