@@ -10,6 +10,8 @@ export interface Profile {
   update: string;
 }
 
+const PROFILE_KEY = "bayou-exotics.json";
+
 export const updateProfile = async (profile: Profile) => {
   const minifiedProfile = JSON.stringify(profile);
 
@@ -26,15 +28,17 @@ export const getProfile = async () => {
   const executive = await s3
     .getObject({
       Bucket: "bayou-exotics",
-      Key: "bayou-exotics.json",
+      Key: PROFILE_KEY,
     })
     .promise()
     .catch((error) => {
-      console.log(`Error fetching assets path", ${error.message}`);
+      console.log(
+        `Error fetching executive data from  ${PROFILE_KEY}: ${error.message}`
+      );
     });
 
   if (!executive || !executive.Body) {
-    throw new Error("bayou-exotics.json has no Body");
+    throw new Error(`${PROFILE_KEY} has no Body`);
   }
 
   const data = executive.Body.toString();

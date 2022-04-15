@@ -23,7 +23,7 @@ export const action: ActionFunction = async ({ request }) => {
     const buffer = Buffer.concat(chunks);
 
     // upload image to bucket
-    const data = addAsset(filename, buffer);
+    const data = await addAsset(filename, buffer);
 
     // return information about uploaded file
     return JSON.stringify({ data });

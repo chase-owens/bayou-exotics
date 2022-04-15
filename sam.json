@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Exported by architect/package@8.1.0 on 2022-04-11T17:31:15.507Z",
+  "Description": "Exported by architect/package@8.1.0 on 2022-04-12T00:43:25.439Z",
   "Resources": {
     "Role": {
       "Type": "AWS::IAM::Role",
@@ -232,7 +232,7 @@
         "Environment": {
           "Variables": {
             "ARC_APP_NAME": "bayou-exotics",
-            "ARC_ENV": "production",
+            "ARC_ENV": "staging",
             "ARC_ROLE": {
               "Ref": "Role"
             },

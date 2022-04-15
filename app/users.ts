@@ -97,7 +97,7 @@ export const getUsers = async () => {
     .promise()
     .then((data) => data)
     .catch((error) => {
-      console.log(`Error fetching assets path", ${error.message}`);
+      console.log(`Error fetching users at ${Keys.User}: ${error.message}`);
     });
 
   if (!data || !data.Body) {
