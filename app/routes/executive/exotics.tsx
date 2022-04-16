@@ -39,9 +39,11 @@ export const action: ActionFunction = async ({ request }) => {
   const cartSelected = formData.get("cart");
   const edibleSelected = formData.get("edible");
   const flowerSelected = formData.get("flower");
-  const moonRockSelected = formData.get("moonRocks");
+  const moonRockSelected = formData.get("moonRock");
   const preRollSelected = formData.get("preRoll");
   const waxSelected = formData.get("wax");
+
+  console.log({ moonRockSelected, edibleSelected });
 
   if (cartSelected) {
     return await deleteCurrentCart(+cartSelected);

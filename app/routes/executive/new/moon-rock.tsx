@@ -146,7 +146,7 @@ export default function NewCart() {
               Reset
             </button>
             <button className="button" type="submit" value="create">
-              {transition.submission ? "Creating..." : "Create Edible"}
+              {transition.submission ? "Creating..." : "Create Moon Rock"}
             </button>
           </p>
         </Form>

@@ -29,6 +29,7 @@ min-height: calc(100vh - 200px);
 
 .exec {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 45px;
   padding-left: 45px;
 }
@@ -43,6 +44,10 @@ min-height: calc(100vh - 200px);
 }
 
 .row {
+  display: flex;
+}
+
+.row-col {
   display: flex;
 }
 
@@ -79,16 +84,6 @@ min-height: calc(100vh - 200px);
   text-transform: capitalize;
 }
 
-.exec > nav {
-  padding-right: 2rem;
-}
-
-.exec > main {
-  flex: 1;
-  border-left: solid 1px #ccc;
-  padding: 0 2rem;
-}
-
 .space {
   gap: 1rem
 }
@@ -96,6 +91,11 @@ min-height: calc(100vh - 200px);
 .space-2 {
   gap: 1.2rem;
 }
+
+.space-noSpace {
+  gap: 1rem
+}
+
 
 em {
   color: red;
@@ -128,4 +128,26 @@ fieldset {
 
 [type="radio"] {
   margin-right: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .exec > nav {
+    padding-right: 2rem;
+  }
+
+  .exec > main {
+    flex: 1;
+    border-left: solid 1px #ccc;
+    padding: 0 2rem;
+  }
+
+  .row-col {
+    flex-direction: column;
+  }
+
+
+  .space-noSpace {
+    gap: 0
+  }
+
 }

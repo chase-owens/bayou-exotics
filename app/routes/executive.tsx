@@ -33,17 +33,19 @@ export default function Executive() {
     <>
       <Header showAdminLink={false} user={user} />
       <div className="exec space">
-        <div className="col">
+        <div className="row-col wrap space-noSpace">
           <h1>Executive</h1>
-          <Link data-active={pathname === "/executive"} to="/executive">
-            Profile
-          </Link>
-          <Link data-active={pathname === "/executive/exotics"} to="exotics">
-            Exotics
-          </Link>
-          <Link data-active={pathname === "/executive/media"} to="media">
-            Images
-          </Link>
+          <div className="row-col space-noSpace">
+            <Link data-active={pathname === "/executive"} to="/executive">
+              Profile
+            </Link>
+            <Link data-active={pathname === "/executive/exotics"} to="exotics">
+              Exotics
+            </Link>
+            <Link data-active={pathname === "/executive/media"} to="media">
+              Images
+            </Link>
+          </div>
         </div>
         <main>
           <Outlet />
