@@ -372,7 +372,7 @@ function handleRequest(request, responseStatusCode, responseHeaders, remixContex
   });
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/root.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/root.tsx
 var root_exports = {};
 __export(root_exports, {
   default: () => App,
@@ -391,7 +391,7 @@ var global_large_default = "/_static/build/_assets/global-large-NKTQAWDZ.css";
 // app/styles/global-medium.css
 var global_medium_default = "/_static/build/_assets/global-medium-DRHJR3JT.css";
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/root.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/root.tsx
 var links = () => {
   return [
     { rel: "stylesheet", href: global_default },
@@ -413,7 +413,7 @@ function App() {
   }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null), /* @__PURE__ */ React.createElement(import_remix2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), /* @__PURE__ */ React.createElement(import_remix2.LiveReload, null)));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/login/index.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/login/index.tsx
 var login_exports = {};
 __export(login_exports, {
   action: () => action,
@@ -652,7 +652,7 @@ async function logout(request) {
 // app/styles/login.css
 var login_default = "/_static/build/_assets/login-TZZD6C6N.css";
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/login/index.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/login/index.tsx
 function validateUsername(username) {
   if (typeof username !== "string" || username.length < 3) {
     return `Usernames must be at least 3 characters long`;
@@ -816,7 +816,7 @@ function Login() {
   }, "Exotics"))))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive.tsx
 var executive_exports = {};
 __export(executive_exports, {
   default: () => Executive,
@@ -829,7 +829,7 @@ var import_remix7 = __toESM(require_remix());
 // app/styles/exec.css
 var exec_default = "/_static/build/_assets/exec-MV6Y2EMO.css";
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive.tsx
 var links3 = () => {
   return [{ rel: "stylesheet", href: exec_default }];
 };
@@ -861,7 +861,7 @@ function Executive() {
   }, "Images"))), /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement(import_remix7.Outlet, null))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/exotics.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/exotics.tsx
 var exotics_exports = {};
 __export(exotics_exports, {
   action: () => action2,
@@ -947,7 +947,7 @@ var deleteCurrentMoonRock = (index) => deleteCurrentIndex("exotics/thc/moon-rock
 var deleteCurrentPreRoll = (index) => deleteCurrentIndex("exotics/thc/pre-roll.json" /* PreRoll */, index);
 var deleteCurrentWax = (index) => deleteCurrentIndex("exotics/thc/wax.json" /* Wax */, index);
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/exotics.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/exotics.tsx
 var action2 = async ({ request }) => {
   const formData = await request.formData();
   const cartSelected = formData.get("cart");
@@ -1142,7 +1142,7 @@ function Executive2() {
   }, "Delete"))))))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/index.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/index.tsx
 var executive_exports2 = {};
 __export(executive_exports2, {
   action: () => action3,
@@ -1189,7 +1189,7 @@ function formatDate(date) {
   return (0, import_date_fns2.format)(date, dateFormat);
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/index.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/index.tsx
 var action3 = async ({ request }) => {
   const formData = await request.formData();
   const profile = await getProfile();
@@ -1266,7 +1266,7 @@ function ExecutiveIndex() {
   }))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/media.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/media.tsx
 var media_exports = {};
 __export(media_exports, {
   action: () => action4,
@@ -1320,7 +1320,7 @@ function getAssetUrl(path) {
   return `${BASE_URL}${path}`;
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/media.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/media.tsx
 var action4 = async ({ request }) => {
   const formData = await request.formData();
   const asset = formData.get("asset");
@@ -1371,7 +1371,7 @@ function Executive3() {
   }, "Delete"))))))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new.tsx
 var new_exports = {};
 __export(new_exports, {
   default: () => NewFlower
@@ -1384,7 +1384,7 @@ function NewFlower() {
   }, /* @__PURE__ */ React.createElement(import_remix12.Outlet, null));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/close-date.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/close-date.tsx
 var close_date_exports = {};
 __export(close_date_exports, {
   action: () => action5,
@@ -1431,7 +1431,7 @@ function NewCloseDate() {
   }, transition.submission ? "Updating..." : "Add Dates Closing")));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/moon-rock.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/moon-rock.tsx
 var moon_rock_exports = {};
 __export(moon_rock_exports, {
   action: () => action6,
@@ -1504,7 +1504,7 @@ function getFlowerPrice(formData) {
   };
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/moon-rock.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/moon-rock.tsx
 var availableMoonRockQuantities = ["1", "2", "3.5", "7", "14", "28"];
 var action6 = async ({ request }) => {
   const formData = await request.formData();
@@ -1612,7 +1612,7 @@ function NewCart() {
   }, transition.submission ? "Creating..." : "Create Moon Rock")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/pre-roll.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/pre-roll.tsx
 var pre_roll_exports = {};
 __export(pre_roll_exports, {
   action: () => action7,
@@ -1656,7 +1656,7 @@ function getPreRollPrice(formData) {
   };
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/pre-roll.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/pre-roll.tsx
 var availablePreRollQuantities = ["1", "5", "10"];
 var action7 = async ({ request }) => {
   const formData = await request.formData();
@@ -1789,7 +1789,7 @@ function NewPreRoll() {
   }, transition.submission ? "Creating..." : "Create Pre Roll")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/edible.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/edible.tsx
 var edible_exports = {};
 __export(edible_exports, {
   action: () => action8,
@@ -1826,7 +1826,7 @@ function getPriceForTwo(formData) {
   };
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/edible.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/edible.tsx
 var availableCartQuantities = ["1", "2"];
 var action8 = async ({ request }) => {
   const formData = await request.formData();
@@ -1936,7 +1936,7 @@ function NewCart2() {
   }, transition.submission ? "Creating..." : "Create Edible")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/flower.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/flower.tsx
 var flower_exports = {};
 __export(flower_exports, {
   action: () => action9,
@@ -2042,7 +2042,7 @@ function NewFlower2() {
   }, transition.submission ? "Creating..." : "Create Flower"))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/media.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/media.tsx
 var media_exports2 = {};
 __export(media_exports2, {
   action: () => action10,
@@ -2099,7 +2099,7 @@ function NewFlower3() {
   }, transition.submission ? "Adding..." : "Add Image")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/cart.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/cart.tsx
 var cart_exports = {};
 __export(cart_exports, {
   action: () => action11,
@@ -2233,7 +2233,7 @@ function NewCart3() {
   }, transition.submission ? "Creating..." : "Create Cart")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/executive/new/wax.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/executive/new/wax.tsx
 var wax_exports = {};
 __export(wax_exports, {
   action: () => action12,
@@ -2345,7 +2345,7 @@ function NewWax() {
   }, transition.submission ? "Creating..." : "Create Wax")))));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/exotics.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/exotics.tsx
 var exotics_exports2 = {};
 __export(exotics_exports2, {
   default: () => Exotics,
@@ -2528,7 +2528,7 @@ var ProductCard_default = ProductCard;
 // app/styles/index.css
 var styles_default = "/_static/build/_assets/index-HOHPSBA3.css";
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/exotics.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/exotics.tsx
 var loader12 = async ({ request }) => {
   const [carts, edibles, flowers, moonRocks, preRolls, profile, user, waxes] = await Promise.all([
     getCarts(),
@@ -2583,7 +2583,7 @@ function Exotics() {
   }, edible)))), /* @__PURE__ */ React.createElement(import_remix22.Outlet, null)), /* @__PURE__ */ React.createElement(Footer_default, __spreadValues({}, profile)));
 }
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/logout.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/logout.tsx
 var logout_exports = {};
 __export(logout_exports, {
   action: () => action13,
@@ -2597,11 +2597,11 @@ var loader13 = async ({ request }) => {
   return logout(request);
 };
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/models.ts
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/models.ts
 var models_exports = {};
 init_react();
 
-// route:/Users/chaseowens/Desktop/bayou_boy/app/routes/index.tsx
+// route:/Users/chaseowens/Desktop/bayou_exotics/app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
   default: () => Index,
@@ -2629,7 +2629,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "83e1de60", "entry": { "module": "/_static/build/entry.client-QMSUHGYY.js", "imports": ["/_static/build/_shared/chunk-TWVLBSQZ.js", "/_static/build/_shared/chunk-6BO74FWO.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/root-6RSXOO27.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive": { "id": "routes/executive", "parentId": "root", "path": "executive", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive-IOYMG32A.js", "imports": ["/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-YVBWVBKR.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/exotics": { "id": "routes/executive/exotics", "parentId": "routes/executive", "path": "exotics", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/exotics-OE7SX645.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/index": { "id": "routes/executive/index", "parentId": "routes/executive", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/executive/index-N7ITYAO2.js", "imports": ["/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/media": { "id": "routes/executive/media", "parentId": "routes/executive", "path": "media", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/media-F6GCFIPL.js", "imports": ["/_static/build/_shared/chunk-G3FN7GFS.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new": { "id": "routes/executive/new", "parentId": "routes/executive", "path": "new", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new-XAPDNPQI.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/cart": { "id": "routes/executive/new/cart", "parentId": "routes/executive/new", "path": "cart", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/cart-YVHHJQLT.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/close-date": { "id": "routes/executive/new/close-date", "parentId": "routes/executive/new", "path": "close-date", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/close-date-YLWJUQTO.js", "imports": ["/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/edible": { "id": "routes/executive/new/edible", "parentId": "routes/executive/new", "path": "edible", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/edible-U3GRIVQU.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/flower": { "id": "routes/executive/new/flower", "parentId": "routes/executive/new", "path": "flower", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/flower-S7L7NLZH.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/media": { "id": "routes/executive/new/media", "parentId": "routes/executive/new", "path": "media", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/media-4I7HOBNO.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/moon-rock": { "id": "routes/executive/new/moon-rock", "parentId": "routes/executive/new", "path": "moon-rock", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/moon-rock-KRYNERV2.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/pre-roll": { "id": "routes/executive/new/pre-roll", "parentId": "routes/executive/new", "path": "pre-roll", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/pre-roll-PSBHIGTH.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/wax": { "id": "routes/executive/new/wax", "parentId": "routes/executive/new", "path": "wax", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/wax-RI3PGVHW.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/exotics": { "id": "routes/exotics", "parentId": "root", "path": "exotics", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/exotics-G3MYWCGJ.js", "imports": ["/_static/build/_shared/chunk-YUPFJPVL.js", "/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js", "/_static/build/_shared/chunk-G3FN7GFS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/index-OJBPDT5P.js", "imports": ["/_static/build/_shared/chunk-YUPFJPVL.js", "/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/login/index": { "id": "routes/login/index", "parentId": "root", "path": "login", "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/login/index-YNMP4LPW.js", "imports": ["/_static/build/_shared/chunk-XEXCYUVY.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/logout": { "id": "routes/logout", "parentId": "root", "path": "logout", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/logout-DFCJ2JUQ.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/models": { "id": "routes/models", "parentId": "root", "path": "models", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/models-W3VKRZVM.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/_static/build/manifest-83E1DE60.js" };
+var assets_manifest_default = { "version": "5a5b22c8", "entry": { "module": "/_static/build/entry.client-QMSUHGYY.js", "imports": ["/_static/build/_shared/chunk-TWVLBSQZ.js", "/_static/build/_shared/chunk-6BO74FWO.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/root-TCDZ7J3Z.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive": { "id": "routes/executive", "parentId": "root", "path": "executive", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive-4AG37E7Y.js", "imports": ["/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-YVBWVBKR.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/exotics": { "id": "routes/executive/exotics", "parentId": "routes/executive", "path": "exotics", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/exotics-XXNHB34Z.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/index": { "id": "routes/executive/index", "parentId": "routes/executive", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/executive/index-4L64ZZPS.js", "imports": ["/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/media": { "id": "routes/executive/media", "parentId": "routes/executive", "path": "media", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/media-GXV4OZRJ.js", "imports": ["/_static/build/_shared/chunk-G3FN7GFS.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new": { "id": "routes/executive/new", "parentId": "routes/executive", "path": "new", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new-CYVH2NAG.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/cart": { "id": "routes/executive/new/cart", "parentId": "routes/executive/new", "path": "cart", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/cart-QAQRFBS3.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/close-date": { "id": "routes/executive/new/close-date", "parentId": "routes/executive/new", "path": "close-date", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/close-date-22PTZNM5.js", "imports": ["/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/edible": { "id": "routes/executive/new/edible", "parentId": "routes/executive/new", "path": "edible", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/edible-ORZ2BEKN.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/flower": { "id": "routes/executive/new/flower", "parentId": "routes/executive/new", "path": "flower", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/flower-3HRS3JEL.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/media": { "id": "routes/executive/new/media", "parentId": "routes/executive/new", "path": "media", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/media-DQW67TO6.js", "imports": void 0, "hasAction": true, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/moon-rock": { "id": "routes/executive/new/moon-rock", "parentId": "routes/executive/new", "path": "moon-rock", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/moon-rock-5EYQDSXQ.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/pre-roll": { "id": "routes/executive/new/pre-roll", "parentId": "routes/executive/new", "path": "pre-roll", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/pre-roll-KONKFK7K.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/executive/new/wax": { "id": "routes/executive/new/wax", "parentId": "routes/executive/new", "path": "wax", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/executive/new/wax-UI5573IT.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/exotics": { "id": "routes/exotics", "parentId": "root", "path": "exotics", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/exotics-TV7CAIBT.js", "imports": ["/_static/build/_shared/chunk-YUPFJPVL.js", "/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js", "/_static/build/_shared/chunk-G3FN7GFS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/index-7NVTBTJO.js", "imports": ["/_static/build/_shared/chunk-YUPFJPVL.js", "/_static/build/_shared/chunk-XEXCYUVY.js", "/_static/build/_shared/chunk-53WOVB3F.js", "/_static/build/_shared/chunk-4UUBIS7H.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/login/index": { "id": "routes/login/index", "parentId": "root", "path": "login", "index": true, "caseSensitive": void 0, "module": "/_static/build/routes/login/index-OZW374Z6.js", "imports": ["/_static/build/_shared/chunk-XEXCYUVY.js"], "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/logout": { "id": "routes/logout", "parentId": "root", "path": "logout", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/logout-G4YCE7SF.js", "imports": void 0, "hasAction": true, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/models": { "id": "routes/models", "parentId": "root", "path": "models", "index": void 0, "caseSensitive": void 0, "module": "/_static/build/routes/models-LFPAIULB.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/_static/build/manifest-5A5B22C8.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
